@@ -5,6 +5,7 @@ import CambiarColor from "./Componentes/CambiarColor";
 import Formulario from "./Componentes/Formulario";
 import ListaPersonas from "./Componentes/ListaPersonas";
 import ListaProductos from "./Componentes/ListaProductos";
+import Saludo from "./Componentes/Saludo";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
          Ejercicios de React 
       </h1>
 
-      {[Contador, MostrarTexto, Multiplicar, CambiarColor, Formulario, ListaPersonas, ListaProductos].map(
+      {[Contador, MostrarTexto, Multiplicar, CambiarColor, Formulario, ListaPersonas, ListaProductos, Saludo].map(
         (Componente, index) => (
           <div
             key={index}
