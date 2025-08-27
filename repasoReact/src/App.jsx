@@ -6,13 +6,16 @@ import Formulario from "./Componentes/Formulario";
 import ListaPersonas from "./Componentes/ListaPersonas";
 import ListaProductos from "./Componentes/ListaProductos";
 import Saludo from "./Componentes/Saludo";
+import filtroFrutas from "./Componentes/filtroFrutas";
+import TotalPrecios from "./Componentes/TotalPrecios";
+
 
 function App() {
   return (
     <div
       style={{
         fontFamily: "Arial, sans-serif",
-        backgroundColor: "#ffe6f0", // rosa claro de fondo
+        backgroundColor: "#ffe6f0", 
         minHeight: "100vh",
         padding: "30px",
         display: "flex",
@@ -25,17 +28,17 @@ function App() {
          Ejercicios de React 
       </h1>
 
-      {[Contador, MostrarTexto, Multiplicar, CambiarColor, Formulario, ListaPersonas, ListaProductos, Saludo].map(
+      {[Contador, MostrarTexto, Multiplicar, CambiarColor, Formulario, ListaPersonas, ListaProductos, Saludo, filtroFrutas, TotalPrecios].map(
         (Componente, index) => (
           <div
             key={index}
             style={{
-              backgroundColor: "#ffccdd", // rosa medio
+              backgroundColor: "#ffccdd", 
               padding: "20px",
               borderRadius: "12px",
               boxShadow: "0 6px 12px rgba(0,0,0,0.1)",
               width: "100%",       
-              maxWidth: "800px",   // ancho grande
+              maxWidth: "800px",   
               textAlign: "center",
               transition: "transform 0.2s",
             }}
