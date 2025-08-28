@@ -8,6 +8,8 @@ import ListaProductos from "./Componentes/ListaProductos";
 import Saludo from "./Componentes/Saludo";
 import filtroFrutas from "./Componentes/filtroFrutas";
 import TotalPrecios from "./Componentes/TotalPrecios";
+import FormularioControlado from "./Componentes/formularioControlado";
+import AppTareas from "./Componentes/AppTareas";
 
 
 function App() {
@@ -28,7 +30,7 @@ function App() {
          Ejercicios de React 
       </h1>
 
-      {[Contador, MostrarTexto, Multiplicar, CambiarColor, Formulario, ListaPersonas, ListaProductos, Saludo, filtroFrutas, TotalPrecios].map(
+      {[Contador, MostrarTexto, Multiplicar, CambiarColor, Formulario, ListaPersonas, ListaProductos, Saludo, filtroFrutas, TotalPrecios, FormularioControlado, AppTareas].map(
         (Componente, index) => (
           <div
             key={index}
