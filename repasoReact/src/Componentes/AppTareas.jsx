@@ -1,11 +1,11 @@
 import { useState } from "react";
-import Tarea from "./Componentes/Tarea"; // 👈 este es el componente hijo que vamos a crear
+import Tarea from "./Tarea"; 
 
 function AppTareas() {
   const [tareas, setTareas] = useState([]);
   const [titulo, setTitulo] = useState("");
 
-  // 1. Crear tareas
+
   const agregarTarea = () => {
     if (titulo.trim() === "") return;
     const nuevaTarea = {
@@ -17,12 +17,10 @@ function AppTareas() {
     setTitulo("");
   };
 
-  // 3. Eliminar tarea
   const eliminarTarea = (id) => {
     setTareas(tareas.filter((t) => t.id !== id));
   };
 
-  // 4. Completar tarea
   const completarTarea = (id) => {
     setTareas(
       tareas.map((t) =>
@@ -31,11 +29,11 @@ function AppTareas() {
     );
   };
 
-  // 5. Separar tareas
+
   const pendientes = tareas.filter((t) => !t.completada);
   const completadas = tareas.filter((t) => t.completada);
 
-  // 6. Contar tareas
+
   const total = tareas.length;
   const hechas = tareas.reduce(
     (acc, t) => (t.completada ? acc + 1 : acc),
@@ -54,7 +52,7 @@ function AppTareas() {
       }}
     >
       <h2 style={{ textAlign: "center", color: "#2c3e50" }}>
-        ✅ App de Tareas
+         App de Tareas
       </h2>
 
       {/* Formulario */}
@@ -63,7 +61,7 @@ function AppTareas() {
           type="text"
           value={titulo}
           onChange={(e) => setTitulo(e.target.value)}
-          placeholder="Escribe una tarea..."
+          placeholder="Escribi una tarea"
           style={{
             flex: 1,
             padding: "10px",
@@ -86,10 +84,10 @@ function AppTareas() {
         </button>
       </div>
 
-      {/* 5. Listas */}
+
       <h3>Pendientes</h3>
       {pendientes.length === 0 ? (
-        <p>🎉 No hay tareas pendientes</p>
+        <p>No hay tareas pendientes yupi</p>
       ) : (
         pendientes.map((t) => (
           <Tarea
@@ -103,7 +101,7 @@ function AppTareas() {
 
       <h3>Completadas</h3>
       {completadas.length === 0 ? (
-        <p>🙌 Aún no completaste ninguna</p>
+        <p>Aún no completaste ninguna</p>
       ) : (
         completadas.map((t) => (
           <Tarea
@@ -115,7 +113,7 @@ function AppTareas() {
         ))
       )}
 
-      {/* 6. Contador */}
+
       <div
         style={{
           marginTop: "20px",

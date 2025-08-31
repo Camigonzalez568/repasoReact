@@ -46,7 +46,7 @@ function Tarea({ tarea, onEliminar, onCompletar }) {
             cursor: "pointer",
           }}
         >
-          🗑 Eliminar
+           Eliminar
         </button>
       </div>
     </div>
