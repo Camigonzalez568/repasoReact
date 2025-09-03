@@ -24,7 +24,7 @@ function Tarea({ tarea, onEliminar, onCompletar }) {
           <button
             onClick={() => onCompletar(tarea.id)}
             style={{
-              background: "#28a745",
+              background: "#ffc0cb",
               color: "white",
               border: "none",
               padding: "4px 8px",

@@ -47,7 +47,7 @@ function AppTareas() {
         margin: "20px auto",
         padding: "20px",
         borderRadius: "12px",
-        background: "#f0f8ff",
+        background: "#ffc0cb",
         boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
       }}
     >
@@ -55,7 +55,7 @@ function AppTareas() {
          App de Tareas
       </h2>
 
-      {/* Formulario */}
+
       <div style={{ display: "flex", gap: "10px", marginBottom: "20px" }}>
         <input
           type="text"

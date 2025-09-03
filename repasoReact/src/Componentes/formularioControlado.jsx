@@ -14,16 +14,16 @@ function FormularioControlado() {
   return (
     <div
       style={{
-        backgroundColor: "#D0E8E2",   // tarjeta suave (verde/azul)
+        backgroundColor: "#ffc0cb",  
         padding: "16px",
         borderRadius: "10px",
-        border: "1px solid #A7C7C5",
+        border: "1px solid #ffc0cb",
         maxWidth: 600,
         margin: "0 auto",
-        color: "#1F4E5F",
+        color: "white",
       }}
     >
-      <h2 style={{ color: "#3A7CA5", marginTop: 0 }}>11️⃣ Formulario controlado</h2>
+      <h2 style={{ color: "white", marginTop: 0 }}>11️⃣ Formulario controlado</h2>
 
       <label style={{ display: "block", marginBottom: 8 }}>
         Nombre
@@ -38,7 +38,7 @@ function FormularioControlado() {
             padding: "10px",
             marginTop: 6,
             borderRadius: 8,
-            border: "2px solid #A7C7C5",
+            border: "2px solid #ffc0cb",
             outline: "none",
           }}
         />
@@ -57,7 +57,7 @@ function FormularioControlado() {
             padding: "10px",
             marginTop: 6,
             borderRadius: 8,
-            border: "2px solid #A7C7C5",
+            border: "2px solid #ffc0cb",
             outline: "none",
           }}
         />
@@ -66,10 +66,10 @@ function FormularioControlado() {
       <div
         style={{
           marginTop: 14,
-          background: "#E6F2F2",
+          background: "#ffc0cb",
           borderRadius: 8,
           padding: 12,
-          border: "1px solid #A7C7C5",
+
         }}
       >
         <strong>Vista previa (tiempo real):</strong>

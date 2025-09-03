@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 
 function Usuarios() {
-  const [usuarios, setUsuarios] = useState([]);   // estado con usuarios
-  const [loading, setLoading] = useState(true);   // estado de carga
-  const [error, setError] = useState(null);       // estado de error
-  const [filtro, setFiltro] = useState("");       // estado para filtro
+  const [usuarios, setUsuarios] = useState([]);
+  const [loading, setLoading] = useState(true);   
+  const [error, setError] = useState(null);       
+  const [filtro, setFiltro] = useState("");       
 
   useEffect(() => {
     const fetchUsuarios = async () => {
@@ -23,7 +23,7 @@ function Usuarios() {
     fetchUsuarios();
   }, []);
 
-  // Filtrar usuarios por nombre o email
+ 
   const usuariosFiltrados = usuarios.filter(
     (u) =>
       u.name.toLowerCase().includes(filtro.toLowerCase()) ||
@@ -34,7 +34,7 @@ function Usuarios() {
   if (error) return <p style={{ color: "red" }}>❌ {error}</p>;
 
   return (
-    <div style={{ padding: "20px", backgroundColor: "#f081e5ff", borderRadius: "12px" }}>
+    <div style={{ padding: "20px", backgroundColor: "#ffc0cb", borderRadius: "12px" }}>
       <h2>Lista de Usuarios</h2>
 
 
@@ -58,7 +58,8 @@ function Usuarios() {
           <li
             key={usuario.id}
             style={{
-              backgroundColor: "#e6f7ff",
+              backgroundColor: "#ffc0cb",
+              border: "1px solid #9b8f8fff",
               margin: "10px 0",
               padding: "12px",
               borderRadius: "8px",

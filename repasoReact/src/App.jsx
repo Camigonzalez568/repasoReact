@@ -38,7 +38,7 @@ function App() {
               padding: "20px",
               borderRadius: "12px",
               boxShadow: "0 6px 12px rgba(0,0,0,0.1)",
-              width: "100%",   // 🔹 Ahora cada uno ocupa todo el ancho
+              width: "100%",   
               textAlign: "center",
               transition: "transform 0.2s",
             }}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function CambiarColor() {
-  const [color, setColor] = useState("white"); // color por defecto
+  const [color, setColor] = useState("black"); 
 
   return (
     <div
