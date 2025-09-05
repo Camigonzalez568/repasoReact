@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 function Multiplicar() {
-  const [numero, setNumero] = useState(0); // número ingresado
+  const [numero, setNumero] = useState(0); 
 
   return (
     <div>

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
 function MostrarTexto() {
-  const [inputTexto, setInputTexto] = useState(""); // lo que se escribe
-  const [textoMostrado, setTextoMostrado] = useState(""); // lo que se muestra después
+  const [inputTexto, setInputTexto] = useState(""); 
+  const [textoMostrado, setTextoMostrado] = useState("");
 
   const handleClick = () => {
-    setTextoMostrado(inputTexto); // al hacer clic, mostramos el texto
+    setTextoMostrado(inputTexto); 
   };
 
   return (

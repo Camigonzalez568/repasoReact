@@ -54,7 +54,7 @@ function Saludo() {
             marginTop: "10px",
           }}
         >
-          Hola, {mostrado} 🌸
+          Hola, {mostrado} 
         </h3>
       )}
     </div>

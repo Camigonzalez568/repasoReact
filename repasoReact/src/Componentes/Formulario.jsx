@@ -4,7 +4,7 @@ function Formulario() {
   const [texto, setTexto] = useState("");
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Evita que se recargue la página
+    e.preventDefault(); 
     alert("Texto ingresado: " + texto);
   };
 

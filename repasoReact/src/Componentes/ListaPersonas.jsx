@@ -1,15 +1,15 @@
 function ListaPersonas() {
-  const personas = ["Ana", "Luis", "María", "Juan", "Sofía"]; // array simple
+  const personas = ["Ana", "Luis", "María", "Juan", "Sofía"]; 
 
   return (
     <div>
-      <h2>👥 Lista de Personas</h2>
+      <h2> Lista de Personas</h2>
       <ul style={{ listStyle: "none", padding: 0 }}>
         {personas.map((nombre, index) => (
           <li
             key={index}
             style={{
-              backgroundColor: "#ffb6c1", // rosa suave
+              backgroundColor: "#ffb6c1", 
               margin: "8px 0",
               padding: "10px",
               borderRadius: "8px",

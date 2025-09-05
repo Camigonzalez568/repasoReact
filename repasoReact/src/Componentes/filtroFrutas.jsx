@@ -10,10 +10,10 @@ function FiltroFrutas() {
     "Mango",
     "Sandía",
     "Melón",
-  ]); // lista fija
-  const [busqueda, setBusqueda] = useState(""); // lo que escribe el usuario
+  ]); 
+  const [busqueda, setBusqueda] = useState(""); 
 
-  // Filtramos en tiempo real
+ 
   const frutasFiltradas = frutas.filter((fruta) =>
     fruta.toLowerCase().includes(busqueda.toLowerCase())
   );
@@ -23,7 +23,7 @@ function FiltroFrutas() {
       <h2>Filtrar frutas</h2>
       <input
         type="text"
-        placeholder="Escribe una fruta..."
+        placeholder="Escribe una fruta"
         value={busqueda}
         onChange={(e) => setBusqueda(e.target.value)}
       />

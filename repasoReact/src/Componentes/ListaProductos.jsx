@@ -15,7 +15,7 @@ function ListaProductos() {
           <li
             key={index}
             style={{
-              backgroundColor: "#ffc0cb", // rosa claro
+              backgroundColor: "#ffc0cb", 
               margin: "10px 0",
               padding: "12px",
               borderRadius: "8px",
